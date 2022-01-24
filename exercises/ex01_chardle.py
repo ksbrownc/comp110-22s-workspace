@@ -2,15 +2,9 @@
 
 __author__ = "730327035"
 
-SECRET: str = "grass"
+i:int = 0
+grass_word: str = input("Enter a 5-character word: ")
+five_letters: str = input("Enter a single character: ")
 
-five_letters: str = input("Enter a 5-character word: ")
-
-if five_letters == SECRET: 
-    grass_word: str= input ("Enter a single character: ")
-    print("Searching for " + grass_word + " in " + five_letters)
-    print(grass_word + " found in index 1")
-    print("1 instances of " + grass_word + " in " + five_letters)
-else:
-    if five_letters < SECRET:
-        print("Error: word must contain 5 characters")
+if grass_word[i] == five_letters: 
+    print("Searching for " + five_letters + " in " + grass_word)
