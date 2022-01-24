@@ -2,46 +2,41 @@
 
 __author__ = "730327035"
 
-
-
 i: int = 0
 grass_word: str = input("Enter a 5-character word: ")
-if (len(grass_word))!= 5: 
+if (len(grass_word)) != 5: 
     print("Error: Word must contain 5 characters ")
+    exit()
 else: 
-
-    five_letters: str = input ("Enter a single character: ")
+    five_letters: str = input("Enter a single character: ")
     counter: int = 0
-    if len(five_letters)!= 1:
-        print ("Error: Character must be a single character.")
+    if len(five_letters) != 1:
+        print("Error: Character must be a single character.")
+        exit()
     else:
         print("Searching for " + five_letters + " in " + grass_word)
 
-
-
         if grass_word[0] == five_letters:
-            print( five_letters + " found at index 0")
+            print(five_letters + " found at index 0")
             counter = counter + 1
         if grass_word[1] == five_letters:
-            print( five_letters + " found at index 1")
+            print(five_letters + " found at index 1")
             counter = counter + 1
         if grass_word[2] == five_letters:
-            print( five_letters + " found at index 2")
+            print(five_letters + " found at index 2")
             counter = counter + 1
         if grass_word[3] == five_letters:
-            print( five_letters + " found at index 3")
+            print(five_letters + " found at index 3")
             counter = counter + 1
         if grass_word[4] == five_letters:
-            print( five_letters + " found at index 4")
+            print(five_letters + " found at index 4")
             counter = counter + 1
             
         if counter == 1:
-            print(str(counter) + " instance of "  + five_letters + " found in " + grass_word) 
+            print(str(counter) + " instance of " + five_letters + " found in " + grass_word) 
         if counter == 0:
-            print (" No instances " + five_letters + " found in " + grass_word)
+            print(" No instances of " + five_letters + " found in " + grass_word)
         if counter > 1:
-            print(str(counter) + " instances of " + five_letters + " found in " + grass_word )
+            print(str(counter) + " instances of " + five_letters + " found in " + grass_word)
         else:
             print(str(counter) + " instances of " + five_letters + " found in " + grass_word)
-
-
