@@ -3,8 +3,9 @@
 __author__ = "730327035"
 
 SECRET: str = "grass"
+
 five_letters: str = input("Enter a 5-character word: ")
-int = "instances"
+
 if five_letters == SECRET: 
     grass_word: str= input ("Enter a single character: ")
     print("Searching for " + grass_word + " in " + five_letters)
