@@ -36,11 +36,12 @@ else:
             counter = counter + 1
             
         if counter == 1:
-            print ( str(counter) instance + five_letters + grass_word) (do letter)
+            print(str(counter) + " instance of "  + five_letters + " found in " + grass_word) 
         if counter == 0:
-            print (no instances (continue later))
+            print (" No instances " + five_letters + " found in " + grass_word)
         if counter > 1:
-            print(str(counter) instances of five_letters + grass_ word )
-        print (str(counter) + " instances of " + five_letters + " found in " + grass_word)
+            print(str(counter) + " instances of " + five_letters + " found in " + grass_word )
+        else:
+            print(str(counter) + " instances of " + five_letters + " found in " + grass_word)
 
 
