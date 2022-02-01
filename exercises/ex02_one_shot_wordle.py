@@ -13,9 +13,9 @@ yellow_box: str = "\U0001F7E8"
 result: str = ""
 wordle: bool = False
 
-guessed_letters: str = input("What is your 6-letter guess? ")
+guessed_letters: str = input(f"What is your {len (SECRET)} letter guess? ")
 while len(guessed_letters) != len(SECRET):
-    guessed_letters = input(("That was not 6 letters! Try again: "))
+    guessed_letters = input((f"That was not {len(SECRET)} letters! Try again: "))
 while index_tracer < len(SECRET):
     alt_index = 0
     if guessed_letters[index_tracer] == SECRET[index_tracer]:
