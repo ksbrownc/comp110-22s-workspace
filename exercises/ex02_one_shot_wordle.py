@@ -2,8 +2,6 @@
 
 __author__ = "730327035"
 
-from tkinter import FALSE
-
 
 index_tracer: int = 0
 SECRET = "python"
