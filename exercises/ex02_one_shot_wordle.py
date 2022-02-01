@@ -15,7 +15,7 @@ wordle: bool = False
 
 guessed_letters: str = input(f"What is your 6-letter guess? ")
 while len(guessed_letters) != len(SECRET):
-        guessed_letters = input((f"That was not 6 letters! Try again: "))
+    guessed_letters = input((f"That was not 6 letters! Try again: "))
 while index_tracer < len(SECRET):
     alt_index = 0
     if guessed_letters[index_tracer] == SECRET[index_tracer]:
@@ -34,7 +34,6 @@ while index_tracer < len(SECRET):
     index_tracer = index_tracer + 1
 print(result)
 if guessed_letters == SECRET: 
-    print(f"Woo! You got it!")
+    print("Woo! You got it!")
 else:
-    print(f"Not quite. Play again soon!")
-
+    print("Not quite. Play again soon!")
