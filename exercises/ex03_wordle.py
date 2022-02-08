@@ -38,7 +38,7 @@ def emojified(guess: str, secret: str) -> str:
             result = result + white_box
         i += 1
     return result
-    # 
+
 
 def input_guess(expected: int) -> str: 
     """Returns guessed word if it meets the expected length."""
