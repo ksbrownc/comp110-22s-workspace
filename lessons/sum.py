@@ -1,7 +1,4 @@
-"""An example of writing a test subject."""
-
-
-from pickletools import floatnl
+"""Example of writing a test subject."""
 
 
 def sum(xs: list[float]) -> float:
