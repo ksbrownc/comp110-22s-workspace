@@ -10,17 +10,17 @@ class Pizza:
     extra_cheese: bool
 
 
-    def price(pizza: Pizza) -> float:
+    def price(self) -> float:
         """Calculate the price of a Pizza."""
         total: float = 0.0
-        if pizza.size == "large":
+        if self.size == "large":
             total += 10.0
         else:
             total += 8.0
 
-        total += pizza.toppings * 0.75
+        total += self.toppings * 0.75
 
-        if pizza.extra_cheese:
+        if self.extra_cheese:
             total+= 1.0
 
         return total
@@ -32,4 +32,4 @@ a_pizza.extra_cheese = False
 print(Pizza)
 print(a_pizza)
 print(a_pizza.size)
-print(f"Price: ${price(a_pizza)}")
+print(f"Price: ${a_pizza.price()}")
